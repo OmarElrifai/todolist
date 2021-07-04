@@ -1,0 +1,117 @@
+html{
+    height: 100%;
+    background: linear-gradient(30deg,#8b44e3 30%,#dce4e9 30.2%);
+    background-repeat: no-repeat;
+   font-family: sans-serif;
+    
+
+}
+body{
+    margin-top: 50px;
+}
+.box{
+/*    border: 1px solid #b8b8bb;*/
+/*    border-radius:30px;*/
+    width: 30%;
+    margin: 0px auto 20px auto;
+    justify-content: center;
+}
+h1{
+    font-size:30px ;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+p{
+    display: inline;
+}
+.heading{
+    background-color: #8b44e3;
+    padding:10px 20px 10px 20px;
+    border-radius: 10px;
+}
+.btn2{
+    width: 100%;
+    background-color: #8b44e3;
+    padding:10px 20px 10px 20px;
+    color: white;
+    margin: 0px auto;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 25px;
+}
+.item{
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #b8b8bb;
+    border-bottom: none;
+    font-size: 20px;
+    
+}
+
+input[type="text"]{
+    background:transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 100;
+    width:80% ;
+    text-align: center;
+}
+
+input[type="text"]:focus{
+    outline: none;
+}
+
+.btn{
+    height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #A683E3;
+  color: #fff;
+  font-size: 30px;
+
+  border-width: 0;
+}
+
+
+input[type="checkbox"]:checked+p{
+    text-decoration: line-through;
+    text-decoration-color: #A683E3;
+}
+::placeholder{
+    color: grey;
+  opacity: 1;
+}
+.box .item:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px; 
+}
+/*
+.box .item:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom: 1px solid #b8b8bb;
+}*/
+@media screen and (max-width:576px){
+    .box{
+        width: 80%;
+    }
+    input[type="text"]{
+        font-size: 15px;
+        width: 88%
+    }
+    .btn{
+         height: 30px;
+         width: 30px;
+        font-size: 15px;
+    }
+    h1{
+        font-size:20px;
+    }
+    .btn2{
+        font-size:15px;
+    }
+}
