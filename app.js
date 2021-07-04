@@ -3,11 +3,11 @@ const app = express();
 const BodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const _=require("lodash")
-mongoose.connect('mongodb://localhost:27017/todolistdb',{useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://Rif:dolkadoz40@mflix.n3dih.mongodb.net/todolistdb',{useNewUrlParser: true, useUnifiedTopology: true});
 app.use(BodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 app.set('view engine','ejs');
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log("server connected")
 })
 var worklist=[];
